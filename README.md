@@ -51,5 +51,7 @@ Check Siraj's ["How to Deploy a Keras Model to Production"](https://youtu.be/f6B
 
 [Building a simple Keras + deep learning REST API](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html).
 
-[How to deploy a Flask App to Heroku] (https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/)."# deep-learning-pneumonia-detection" 
+[How to deploy a Flask App to Heroku](https://progblog.io/How-to-deploy-a-Flask-App-to-Heroku/).
+
+"# deep-learning-pneumonia-detection" 
 "# deep-learning-pneumonia-detection-web-app" 
