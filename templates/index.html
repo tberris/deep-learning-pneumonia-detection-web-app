@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+
+<body>
+This web application is based on a 2-layer convolutional neural network (CNN), trained to recognise pneumonia on chest x-rays. The neural network achieved accuracy exceeding 86% on the relevant test set of more than 500 x-rays. The application returns the prediction as well as the corresponding accuracy percentage. Please note that the predictive accuracy of the model, depends on the quality and quantity of the training data. Therefore the model has limitations and cannot be used for definite clinical predictions! Instead it can be used for research and comparison purposes (please see notes below).
+</body>
+
+<h2></h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Select Image
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+<body>
+NOTES
+<ul>
+<li>This deep learning model has been trained and validated, using the following dataset: <a href="https://data.mendeley.com/datasets/rscbjbr9sj/2">Kermany Daniel, Zhang Kang, Goldbaum Michael (2018). Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification. Mendeley Data, v2, http://dx.doi.org/10.17632/rscbjbr9sj.2</a></li>
+<li><b style="color:red;">The suitability of this deep learning model for clinical use has not been validated. Therefore it cannot be used for any clinical purpose! It can be used for research purposes and for comparison with other similar models.</b></li>
+<li>This web application has been created using code developed by Xin Fu (please see the following repository: </h2><a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">https://github.com/mtobeiyf/keras-flask-deploy-webapp</a></li>
+<li>The final code for this specific web app along with the trained model data can be found in the following repository: </h2><a href="https://github.com/tberris/deep-learning-pneumonia-detection-web-app">https://github.com/tberris/deep-learning-pneumonia-detection-web-app</a></li>
+<li>For any comments or suggestions please contact Theocharis Berris at: theocharisberris@gmail.com</li>
+</ul>
+</body>
+{% endblock %}
