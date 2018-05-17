@@ -11,6 +11,8 @@
 
 > A JavaScript app running on the browser calls the Flask app (app.py) to load the model weights and return results to the JavaScript  app (through the 'GET' and 'POST' methods). More details may be found at: <a href="https://www.youtube.com/watch?v=SI1hVGvbbZ4">Deploy Keras Neural Network to Flask web service | Part 1 - Overview</a>
 
+> This app is currently live and can be found at: <a href="https://pneumonia-detection.herokuapp.com/">https://pneumonia-detection.herokuapp.com/</a>.
+
 > This web application has been created using code developed by Xin Fu (please see the following repository: <a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">https://github.com/mtobeiyf/keras-flask-deploy-webapp</a>. The changes to what Xin Fu had already prepared were the following:
 <ul>
 <li>Inclusion of a procfile to serve the app with gunicorn on the Heroku server after upload (for uploading this python app to Heroku please follow Heroku documentation on how to use git with Heroku)</li>
