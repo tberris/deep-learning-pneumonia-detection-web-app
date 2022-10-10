@@ -11,8 +11,6 @@
 
 > A JavaScript app running on the browser calls the Flask app (app.py) to load the model weights and return results to the JavaScript  app (through the 'GET' and 'POST' methods). More details may be found at: <a href="https://www.youtube.com/watch?v=SI1hVGvbbZ4">Deploy Keras Neural Network to Flask web service | Part 1 - Overview</a>
 
-> This app is currently live and can be found at: <a href="https://pneumonia-detection.herokuapp.com/">https://pneumonia-detection.herokuapp.com/</a>.
-
 > This web application has been created using code developed by Xin Fu (please see the following repository: <a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">https://github.com/mtobeiyf/keras-flask-deploy-webapp</a>. The changes to what Xin Fu had already prepared were the following:
 <ul>
 <li>Inclusion of a procfile to serve the app with gunicorn on the Heroku server after upload (for uploading this python app to Heroku please follow Heroku documentation on how to use git with Heroku)</li>
@@ -20,7 +18,7 @@
 <li>Inclusion of gunicorn to the requirements.txt file</li>
 <li>Changed the app.py (flask app) file to adapt it to the required functionality according to the trained binary image classification model. The program was also modified to delete every uploaded image after providing the prediction. This will prevent exceeding capacity limits on Heroku servers. The last lines of the file have been modified to work with gunicorn. The gevent serving code lines have been commented out, but are still there in case someone would like to run the code locally as Xin Fu explained in the README of his repo <a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">https://github.com/mtobeiyf/keras-flask-deploy-webapp</a></li>
 <li>The Index.html and base.html files have been modified accordingly to include references and information about the model</li>
-<li>This README file has bben adapted to provide instructions about heroku deployment. The part for customisation has been modified also</li>
+<li>This README file has been adapted to provide instructions about heroku deployment. The part for customisation has been modified also</li>
 </ul>
 
 > To create a web app that runs locally, please see Xin Fu's repo (<a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">https://github.com/mtobeiyf/keras-flask-deploy-webapp</a>) and follow instructions in the README file, to run the model locally. Gevent or gunicorn may be used for local deployment too.
@@ -45,7 +43,7 @@ Modify files in `templates` and `static` directory.
 
 ## Deployment
 
-To deploy it for public use, you need to upload this app on heroku or other python enabled server. However heroku is pretty good at recognising and running python apps. There is also a free version!
+To deploy it for public use, you need to upload this app on heroku or other python enabled server. However heroku is pretty good at recognising and running python apps.
 
 ## More resources
 
